@@ -1,0 +1,66 @@
+--------
+D-Level
+--------
+
+Tests in SimpleCurlTest
+
+1 ) getRetrievedDoc (line 46)
+From the original SimpleCurlTest file, there was already a getRetrievedDoc test.
+
+Shows that the document is being retrieved correctly.
+
+2 ) Vector URLS (line 54) 
+Prints out all the vector strings.
+
+Shows that the findURLs method in SimpleCurl works correcty. 
+
+
+--------
+C-Level
+--------
+
+3 ) Graph Map Fill (line 67)
+Prints out both the key (source vertex) and values (neighbors) of the Graph map.
+
+Shows that the map is functioning correctly from intitializing in URLGraph. 
+It should load the source vertex as the key and then use the vector of strings 
+(already tested) as the values. 
+
+4 ) Breadth Search (line 88)
+Prints out the key value and their neighbors as it goes through the queue. Also
+added prints for color value.
+
+This will show if the queue is loading correctly in the BSF method and if the 
+color map is correct. If the color of the URL is -1, it should not be added
+in the queue and the color print will allow me to find why the color value is 
+incorrect if I see that.
+
+
+--------
+B-Level
+--------
+
+5 ) Added new target words (line 96-98)
+
+The string target "Jesus" should be the end goal, but I added "student" which I 
+knew would be found on www.xavier.edu within the level limit and "Gracie" which
+I knew would not. Both were tests to check the output prints(what level, parent,
+page count etc). 
+
+6 ) Finding the word test (line 94 in URLGraph.cpp)
+This if statement is to allow the loop to break, so this test checks to see if the 
+findWord method works correctly. I knew the method should return a bool true for 
+"student" but false for "Gracie" so the output let me see if the target had been
+found. It was also useful in order to see if the level/page count output from
+earlier was correct since "student" was found quickly and I could manually check
+page count myself.
+
+
+--------
+A-Level
+--------
+
+7 ) Used new target URL
+"Jesus Golf" involves using wikipedia so instead of using xavier.edu, I did some
+tests with same target words involving the wikipedia page which showed if the 
+cURL libraries were correct. 

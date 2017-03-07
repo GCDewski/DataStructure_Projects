@@ -1,0 +1,86 @@
+D-Level:
+--------------------
+	
+Used print lines to test for certain characters and frequency counts in the array knowing 
+what the outcome should be. 
+	1) The first print line was used to make sure the array had been filled w/ 0's
+	(ReadFile 13). 
+	2) The second print line the while loop was used to make sure it was reading the char
+	from the file correctly. (ReadFile 23)
+	3) The third and fourth were used to test when the character has a frequency and when it
+	did not to make sure it was entered into the array correctly (ReadFile 24 & 27)
+
+C-Level:
+--------------------
+
+Created methods for testing in main.
+	1) getWeight()
+	2) getHeap()
+Created HuffmanNodes b, c, and d where b was the parent and c and d were children.
+	1) Used printlines to check the parent value and weight (main 29 and 31)
+Created HuffmanNode empty which was used to test if it build the parent to child relationship right.
+Created HuffmanNode tree to test if the children were null
+	1) Test if null (main 49)
+	2) Test values and weights of children with print lines (main 55-60)
+Created HeapNode g and built nodes from previous children and new ones e, f to test operator method
+	1) Build if statement so I could see what the operator method was returning compared to what
+	it should be returning. (main 72-79)
+Created a Heap with h-k HeapNodes
+	1) Printed the size of the heap (main 100)
+	2) Popped a value off and re-printed the size of the heap (main 101-102)
+	3) Popped off the other values of the heap and printed all of them out using for loop (main 105-109)
+	4) Used another for loop to see if I could put the same test above on one line. (main 113-116)
+Created a HeapNode L and built a tree
+	1) Printed off chars.size() to make sure that the vector of string was right size for Buildtree
+	(main 123)
+Created a vector of strings from L.BuildTree()
+	1) Printed PSEUDOEOF val (main 124)
+Used print lines within Build Tree to test values
+	1) Tested int at index the passed in vector (HeapNode 46)
+	2) Test HeapSize several times within method in order to see the progress as heap builds (Heapnode 52 & 56)
+	3) As nodes were popped off, printed vals and weight in order to see the order they were being taken off 
+	(HeapNode 63-64 & 69-70)
+	4) After building a new node, printed the weight to make sure the two weights added (Heapnode 76)
+	
+B-Level:
+--------------------
+
+Created HuffmanNodes left & right for (surprise!) testing Left and Right children (HuffmanNode 33-34)
+Print lines
+	1) Print to check the value of the node when it's a leaf (HuffmanNode 38)
+	2) Print to check the final path from traversing the tree (HuffmanNode 39)
+	3) Prints for the weight of the current node and then prints direction + path progression so I can 
+	make sure the tree is going the right way and adding to the path correctly. (HuffmanNode 46-47 & 54-55)
+	4) Print for the non zero number after looping through returned vector of traveltree() (Main 155)
+	5) Print out final path to check if the encoding from the traveltree was done correctly. (Main 156)
+	6) Printed out anything written to the new file to see the progression through the old file and
+	make sure I'm getting the right values from the vector from travelTree() (ReadFile 51 & 55)
+
+A-Level:
+--------------------
+Created a second main
+Print Lines
+	1)Tested that infile read the first line character rep. nonzero num (main2 30)
+	2)Tested that the infile was progressing in the order ch, freq, space (main2 35 & 38)
+When it failed
+	1) Changed type of ch & freq
+	2) Changed how it was read into the infile (infile << ch etc)
+
+
+
+THEN I WAS SAD BECAUSE IT DIDN'T MAKE ANY SENSE.
+	The End.
+
+	
+	
+
+
+	
+
+	
+
+	
+
+
+
+	
